@@ -1,0 +1,259 @@
+body {
+    /*冬青字体*/
+    font-family: "HiraginoSansGB-W3" !important;
+    min-width: 1400px;
+    width: 100%;
+    padding-top: 80px;
+    background-color: #EFF2F5;
+}
+
+li {
+    list-style: none;
+}
+
+/*下拉框字体颜色*/
+li.dropdown > a {
+    color: #1AA99D;
+}
+
+li.dropdown > a:hover {
+    height: 44px;
+}
+
+li.dropdown.open > a {
+    height: 44px;
+}
+
+.progress {
+    height: 6px;
+    width: 50%;
+    display: inline-block;
+    margin: 0 20px 0 25px;
+
+}
+
+#infoType {
+    background-color: #1AA99D;
+    padding: 0;
+}
+
+#infoType {
+    text-align: center;
+    color: #ffffff !important;
+    height: 76px;
+    line-height: 76px;
+}
+
+#infoType > a {
+    color: #ffffff;
+}
+
+#infoType > a, #infoType > a div h5 {
+    display: inline;
+    margin: 0 auto;
+    height: 76px;
+    line-height: 76px;
+    vertical-align: middle;
+}
+
+#infoType > a div img {
+    vertical-align: middle;
+    margin: 0 27px 0 -50px;
+}
+
+#infoType > div:nth-child(3) img, #infoType > div:nth-child(4) img {
+    margin-right: 20px;
+}
+
+#infoType > a div.active {
+    background-color: #17978c;
+    height: 76px;
+    line-height: 76px;
+}
+
+/*地图主内容*/
+.main .container {
+    background-color: #ffffff;
+    height: 610px;
+    margin-bottom: 53px;
+}
+
+.map-navigation {
+    margin-bottom: 18px;
+}
+
+.map-navigation .btn-group button {
+    margin: 15px 0 0 8px;
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 9px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0;
+    color: #1AA99D;
+    border: 1px solid #1AA99D;
+    background-color: #ffffff;
+}
+
+.map-navigation .btn-group button.active {
+    background-color: #1AA99D;
+    color: #ffffff;
+}
+
+/*搜索指标*/
+.main .search-val {
+    position: absolute;
+    margin: 490px 0 0 30px;
+    text-align: left;
+    font-size: 11px;
+    color: #777777;
+}
+
+/*内容*/
+.map-container {
+    padding: 39px 0 51px 0;
+}
+
+/*选项卡切换*/
+#tab .btn-group {
+    margin: 55px 0 10px 0;
+    padding: 0;
+    width: 100%;
+    height: 26px;
+    font-size: 11px;
+    border: 1px solid #1AA99D;
+    border-radius: 5px;
+}
+
+#tab .btn-group span.active {
+    background-color: #1AA99D;
+    color: #fff;
+}
+
+#tab .btn-group span {
+    /*margin: 15px 0 0 8px;*/
+    margin: 0;
+    width: 25%;
+    height: 24px;
+    display: inline-block;
+    line-height: 26px;
+    font-size: 10px;
+    text-align: center;
+    padding: 0;
+    color: #1AA99D;
+    border: none;
+    border-right: 1px solid #1AA99D;
+    cursor: pointer;
+}
+
+#tab .btn-group span:last-child {
+    border-right: none;
+}
+
+.tab-pane .pros {
+    line-height: 20px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.tab-pane .left {
+    width: 30%;
+    display: inline-block;
+}
+
+.tab-pane .progress {
+    width: 44%;
+    margin: 0 20px 0 8px;
+}
+
+.tab-pane .pros .right {
+    color: #1AA99D;
+}
+
+#map {
+    padding: 39px 0 51px 0;
+    overflow: hidden;
+    height: 352px;
+}
+
+/* 提示自定义 */
+.mapTip {
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    font-size: 12px;
+    font-family: Tahoma;
+    color: #fff;
+}
+
+.mapTip .province, .mapTip .provinceToast {
+    background-color: #000;
+    padding: 8px 36px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.mapTip .arrow,
+.mapTip .arrowMask {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.mapTip .arrow {
+    bottom: -7px;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-top-color: #999;
+    border-top-color: rgba(0, 0, 0, .25);
+    border-bottom-width: 0;
+}
+
+.mapTip .arrowMask {
+    bottom: 1px;
+    border-width: 6px;
+    margin-left: -6px;
+    border-top-color: #fff;
+    border-bottom-width: 0;
+}
+
+.mapInfo i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    line-height: 15px;
+    font-style: normal;
+    background: #aeaeae;
+    color: #fff;
+    font-size: 11px;
+    font-family: Tahoma;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center
+}
+
+.mapInfo i.active {
+    background: #E27F21;
+}
+
+.mapInfo span {
+    padding: 0 5px 0 3px;
+}
+
+.mapInfo b {
+    font-weight: normal;
+    color: #2770B5
+}
+
+.container {
+    width: 1050px;
+    max-width: none !important;
+}
+
